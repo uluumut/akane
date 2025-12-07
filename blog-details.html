@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Akane Blog Detay">
+    <meta name="keywords" content="Akane, moda, blog, detay">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Akane | Blog Detayı</title>
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    
+    <link rel="stylesheet" href="css/custom.css" type="text/css">
+</head>
+
+<body>
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__close">+</div>
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__auth">
+            <a href="./admin/panel.html">Yönetici Paneli</a>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-3 col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt="Akane Logo"></a>
+                    </div>
+                </div>
+                
+                <div class="col-xl-7 col-lg-8">
+                    <nav class="header__menu">
+                        <ul>
+                            <li ><a href="./index.html">Ana Sayfa</a></li>
+
+                            <li><a href="./shop.html">Ürünlerimiz</a>
+                                <ul class="dropdown">
+                                    <li><a href="./shop-kadin.html">Kadın Giyim</a></li>
+                                    <li><a href="./shop-erkek.html">Erkek Giyim</a></li>
+                                    <li><a href="./shop-cocuk.html">Çocuk Giyim</a></li>
+                                    <li><a href="./shop-aksesuar.html">Aksesuarlar</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="./birimlerimiz.html">Birimlerimiz</a></li>
+
+                            <li><a href="./about.html">Hakkımızda</a></li>
+                            <li><a href="./misyon-vizyon.html">Misyon-Vizyon</a></li>
+                            
+                            <li class="active"><a href="./blog.html">Blog</a></li>
+
+                            <li><a href="./contact.html">İletişim</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="header__right">
+                        <div class="header__right__auth">
+                            <a href="./admin/panel.html">Yönetici Girişi</a>
+                        </div>
+                        <ul class="header__right__widget">
+                            <li><span class="icon_search search-switch"></span></li>
+                            
+                            <li><a href="./shop-cart.html"><span class="icon_bag_alt"></span>
+                                <div class="tip">0</div>
+                            </a></li>
+
+                            <li style="margin-left:10px;">
+                                <button id="darkModeToggle" style="border:none; background:transparent; cursor:pointer; font-size:18px;">
+                                    <i class="fa fa-moon-o"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="canvas__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="./index.html"><i class="fa fa-home"></i> Ana Sayfa</a>
+                        <a href="./blog.html">Blog</a>
+                        <span>Detay</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="blog-details-hero set-bg" id="detayHero" data-setbg="img/blog/details/blog-details.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="blog__details__hero__text">
+                        <h2 id="detayBaslik">Blog Başlığı Yükleniyor...</h2>
+                        <ul>
+                            <li>By Admin</li>
+                            <li id="detayTarih">...</li>
+                            <li id="detayKategori">...</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8">
+                    <div class="blog__details__content">
+                        <div class="blog__details__desc">
+                            <p id="detayIcerik">
+                                İçerik yükleniyor, lütfen bekleyiniz...
+                            </p>
+                        </div>
+                        
+                        <div class="blog__details__quote">
+                            <i class="fa fa-quote-left"></i>
+                            <p>Moda, sadece kıyafetlerden ibaret değildir. Moda gökyüzünde, sokakta, moda fikirlerle, yaşam tarzımızla ilgilidir.</p>
+                            <h6>Coco Chanel</h6>
+                        </div>
+
+                        <div class="blog__details__widget">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="blog__details__tags">
+                                        <a href="#">Moda</a>
+                                        <a href="#">Trend</a>
+                                        <a href="#">Stil</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="blog__details__social">
+                                        <h6>Paylaş:</h6>
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google"></i></a>
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="blog__sidebar">
+                        <div class="blog__sidebar__item">
+                            <div class="section-title">
+                                <h4>Kategoriler</h4>
+                            </div>
+                            <ul>
+                                <li><a href="#">Tümü <span>(20)</span></a></li>
+                                <li><a href="#">Kadın Giyim <span>(5)</span></a></li>
+                                <li><a href="#">Sokak Modası <span>(9)</span></a></li>
+                                <li><a href="#">Trendler <span>(10)</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="blog__sidebar__item">
+                            <div class="section-title">
+                                <h4>Popüler Haberler</h4>
+                            </div>
+                            <a href="#" class="blog__feature__item">
+                                <div class="blog__feature__item__pic">
+                                    <img src="img/blog/sidebar/fp-1.jpg" alt="">
+                                </div>
+                                <div class="blog__feature__item__text">
+                                    <h6>Yaz Sezonu İndirimleri</h6>
+                                    <span>Aug 12, 2024</span>
+                                </div>
+                            </a>
+                            <a href="#" class="blog__feature__item">
+                                <div class="blog__feature__item__pic">
+                                    <img src="img/blog/sidebar/fp-2.jpg" alt="">
+                                </div>
+                                <div class="blog__feature__item__text">
+                                    <h6>En İyi Aksesuarlar</h6>
+                                    <span>Aug 15, 2024</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer__about">
+                    <div class="footer__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <p>Akane, modern tasarım anlayışı ve kaliteli ürün yelpazesiyle modaya yön veren öncü bir giyim mağazasıdır.</p>
+                    <div class="footer__payment">
+                        <a href="#"><img src="img/payment/payment-1.png" alt=""></a>
+                        <a href="#"><img src="img/payment/payment-2.png" alt=""></a>
+                        <a href="#"><img src="img/payment/payment-3.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="footer__widget">
+                    <h6>Hızlı Menü</h6>
+                    <ul>
+                        <li><a href="./about.html">Hakkımızda</a></li>
+                        <li><a href="./misyon-vizyon.html">Misyon & Vizyon</a></li>
+                        <li><a href="./blog.html">Blog Yazıları</a></li>
+                        <li><a href="./contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="footer__widget">
+                    <h6>Bize Ulaşın</h6>
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i> Kocaeli Üniversitesi Teknoloji Fakültesi, 41000 İzmit/Kocaeli</li>
+                        <li><i class="fa fa-phone"></i> +90 505 571 71 65</li>
+                        <li><i class="fa fa-envelope"></i> ulutumu@gmail.com</li>
+                        <li><i class="fa fa-clock-o"></i> Pzt - Cuma: 09:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="footer__newslatter">
+                    <h6>SOSYAL MEDYA & BÜLTEN</h6>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/kou92official/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://x.com/kou92official"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/kou92official/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/c/kocaeli%C3%BCniversitesi"><i class="fa fa-youtube-play"></i></a>
+                    </div>
+                    <p>Kampanyalardan haberdar olmak için e-posta adresinizi bırakın.</p>
+                    <form id="bultenFormu">
+                        <input type="text" placeholder="E-Posta Adresiniz">
+                        <button type="submit" class="site-btn">Abone Ol</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer__copyright__text">
+                    <p>
+                        Copyright &copy; <script>document.write(new Date().getFullYear());</script> Tüm Hakları Saklıdır. <br>
+                        Bu web sitesi <span style="color: #ca1515; font-weight: bold;">Umut ULU</span> tarafından tasarlanmıştır.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        window.onload = function() {
+            // 1. Tıklanan yazının ID'sini hafızadan al
+            var secilenId = localStorage.getItem("secilenBlogId");
+            
+            // 2. Tüm blog yazılarını çek
+            var postlar = JSON.parse(localStorage.getItem("blogPostlari")) || [];
+            
+            // 3. ID'si eşleşen yazıyı bul
+            var post = postlar.find(x => x.id == secilenId);
+
+            if (post) {
+                // VERİ VARSA YERLEŞTİR
+                
+                // Başlık
+                document.getElementById("detayBaslik").innerText = post.baslik;
+                
+                // Tarih ve Kategori
+                document.getElementById("detayTarih").innerText = post.tarih;
+                document.getElementById("detayKategori").innerText = post.kategori;
+                
+                // İçerik (innerHTML kullanıyoruz ki paragraf boşlukları vs. çalışsın)
+                // Admin'de yazarken enter'a basarsan buraya \n olarak gelir, CSS ile bunu düzenleyebiliriz
+                // veya admin panelinde .replace(/\n/g, "<br>") yapabiliriz. Şimdilik düz basıyoruz.
+                document.getElementById("detayIcerik").innerHTML = post.icerik;
+
+                // Kapak Resmi (Background Image olarak ayarlanıyor)
+                var hero = document.getElementById("detayHero");
+                hero.style.backgroundImage = `url('${post.resim}')`;
+                hero.style.backgroundSize = "cover"; // Resmin tam oturması için
+
+            } else {
+                // VERİ BULUNAMAZSA (Hata yönetimi)
+                document.getElementById("detayBaslik").innerText = "Yazı Bulunamadı";
+                document.getElementById("detayIcerik").innerHTML = "<h3>Aradığınız blog yazısı silinmiş veya mevcut değil.</h3><br><a href='blog.html' class='site-btn'>Listeye Dön</a>";
+            }
+        };
+    </script>
+
+
+<script src="js/custom.js"></script>
+</body>
+
+</html>

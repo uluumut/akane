@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akane | Birimlerimiz</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    
+
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/custom.css" type="text/css">
+
+
+
+ <style>
+        /* 1. Pasif (Seçili Olmayan) Butonlar */
+        #ozel-yan-menu .nav-link {
+            color: #333;             /* Yazı rengi */
+            background-color: #f5f5f5; /* Çok hafif gri */
+            margin-bottom: 8px;      /* Butonlar arası boşluk */
+            border-radius: 4px;      /* Hafif yuvarlak köşe */
+            padding: 16px 20px;
+            font-weight: 600;
+            text-align: left;
+            transition: all 0.3s ease;
+            
+            /* TEMİZLİK KOMUTLARI */
+            border: 0 !important;
+            box-shadow: none !important;
+            outline: none !important;
+        }
+
+        /* 2. AKTİF (SEÇİLİ) BUTON - Renk ve Çizgi Ayarı */
+        #ozel-yan-menu .nav-link.active {
+            /* Renk Ayarı: Ana menüdeki o tok kırmızı */
+            background-color: #ca1515 !important; 
+            color: #ffffff !important;
+            
+            /* ÇİZGİYİ YOK EDEN SİHİRLİ KODLAR */
+            position: relative;
+            z-index: 1;
+            overflow: hidden !important; /* Taşan gölge/çizgiyi keser atar */
+            
+            /* Kenarlıkları ve gölgeleri zorla kapat */
+            border: 0 !important;
+            box-shadow: none !important;
+            background-image: none !important;
+        }
+
+        /* Hover (Üzerine Gelince) */
+        #ozel-yan-menu .nav-link:hover {
+            background-color: #e0e0e0; /* Hoverda hafif koyu gri */
+            color: #ca1515;            /* Yazı kırmızı olsun */
+            padding-left: 25px;        /* Ufak bir kayma efekti */
+        }
+        
+        /* Aktifken Hover Olursa */
+        #ozel-yan-menu .nav-link.active:hover {
+            background-color: #b01212 !important; /* Daha koyu kırmızı */
+            color: #fff !important;
+            padding-left: 20px; /* Kayma yapmasın */
+        }
+
+        /* Şablonun eklediği gizli elementleri (before/after) engelle */
+        #ozel-yan-menu .nav-link::after,
+        #ozel-yan-menu .nav-link::before {
+            display: none !important;
+            content: none !important;
+        }
+
+        /* İkon ayarı */
+        #ozel-yan-menu i { margin-right: 12px; }
+
+        /* Sağ taraf içerik kutusu */
+        .tab-content {
+            background: #fff;
+            padding: 40px;
+            border: 1px solid #f0f0f0;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+        }
+    </style>
+</head>
+<body>
+   <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-3 col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt="Akane Logo"></a>
+                    </div>
+                </div>
+                
+                <div class="col-xl-7 col-lg-8">
+                    <nav class="header__menu">
+                        <ul>
+                            <li ><a href="./index.html">Ana Sayfa</a></li>
+
+                            <li><a href="./shop.html">Ürünlerimiz</a>
+                                <ul class="dropdown">
+                                    <li><a href="./shop-kadin.html">Kadın Giyim</a></li>
+                                    <li><a href="./shop-erkek.html">Erkek Giyim</a></li>
+                                    <li><a href="./shop-cocuk.html">Çocuk Giyim</a></li>
+                                    <li><a href="./shop-aksesuar.html">Aksesuarlar</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="active"><a href="./birimlerimiz.html">Birimlerimiz</a></li>
+
+                            <li><a href="./about.html">Hakkımızda</a></li>
+                            <li><a href="./misyon-vizyon.html">Misyon-Vizyon</a></li>
+                            
+                            <li><a href="./blog.html">Blog</a></li>
+
+                            <li><a href="./contact.html">İletişim</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="header__right">
+                        <div class="header__right__auth">
+                            <a href="./admin/panel.html">Yönetici Girişi</a>
+                        </div>
+                        <ul class="header__right__widget">
+                            <li><span class="icon_search search-switch"></span></li>
+                            
+                            <li><a href="./shop-cart.html"><span class="icon_bag_alt"></span>
+                                <div class="tip">0</div>
+                            </a></li>
+
+                            <li style="margin-left:10px;">
+                                <button id="darkModeToggle" style="border:none; background:transparent; cursor:pointer; font-size:18px;">
+                                    <i class="fa fa-moon-o"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="canvas__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="./index.html"><i class="fa fa-home"></i> Ana Sayfa</a>
+                        <span>Kurumsal Birimlerimiz</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mb-4">
+                    <div class="section-title">
+                        <h4>Organizasyon Yapımız</h4>
+                        <p>Firmamızın başarısının arkasındaki güçlü ekipleri tanıyın.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+    <div class="nav flex-column nav-pills" id="ozel-yan-menu" role="tablist" aria-orientation="vertical">
+        
+        <a class="nav-link active" id="v-pills-satis-tab" data-toggle="pill" href="#v-pills-satis" role="tab" aria-selected="true">
+           <i class="fa fa-shopping-cart mr-2"></i> Satış ve Pazarlama
+        </a>
+
+        <a class="nav-link" id="v-pills-ik-tab" data-toggle="pill" href="#v-pills-ik" role="tab" aria-selected="false">
+           <i class="fa fa-users mr-2"></i> İnsan Kaynakları
+        </a>
+
+        <a class="nav-link" id="v-pills-lojistik-tab" data-toggle="pill" href="#v-pills-lojistik" role="tab" aria-selected="false">
+           <i class="fa fa-truck mr-2"></i> Lojistik ve Depo
+        </a>
+
+        <a class="nav-link" id="v-pills-it-tab" data-toggle="pill" href="#v-pills-it" role="tab" aria-selected="false">
+           <i class="fa fa-laptop mr-2"></i> Bilgi Teknolojileri (IT)
+        </a>
+
+        <a class="nav-link" id="v-pills-finans-tab" data-toggle="pill" href="#v-pills-finans" role="tab" aria-selected="false">
+           <i class="fa fa-money mr-2"></i> Muhasebe ve Finans
+        </a>
+
+    </div>
+</div>
+
+                <div class="col-md-8">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        
+                        <div class="tab-pane fade show active" id="v-pills-satis" role="tabpanel">
+                            <h3>Satış ve Pazarlama Birimi</h3>
+                            <hr>
+                            <img src="img/blog/serkan-uygur-pazarlama-ve-satc4b1c59f1.jpg" class="img-fluid mb-3 rounded" alt="Satış Ekibi">
+                            <p>Satış ve Pazarlama ekibimiz, markamızın sesini dünyaya duyuran ve müşteri ilişkilerini yöneten en dinamik birimimizdir.</p>
+                            <ul>
+                                <li><strong>Görevleri:</strong> Dijital reklam yönetimi, Mağaza satış stratejileri, Kampanya kurguları.</li>
+                                
+                                <li><strong>İletişim:</strong> satis@akane.com</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-ik" role="tabpanel">
+                            <h3>İnsan Kaynakları (İK)</h3>
+                            <hr>
+                            <img src="img/blog/insan-kaynaklari-departmani.jpg" class="img-fluid mb-3 rounded" alt="İK Ekibi">
+                            <p>En büyük sermayemiz çalışanlarımızdır. İK birimi, yetenekleri keşfeder ve şirket kültürünü korur.</p>
+                            <ul>
+                                <li><strong>Görevleri:</strong> İşe alım süreçleri, Personel eğitimi, Performans yönetimi.</li>
+                                <li><strong>İletişim:</strong> ik@akane.com</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-lojistik" role="tabpanel">
+                            <h3>Lojistik ve Depo Yönetimi</h3>
+                            <hr>
+                            <img src="img/blog/lojistik-depolama.jpg" class="img-fluid mb-3 rounded" alt="Lojistik">
+                            <p>Ürünlerin fabrikadan müşterinin kapısına kadar olan serüvenini yöneten operasyonel birimimizdir.</p>
+                            <p>Siparişlerin zamanında ve hasarsız ulaşması için 7/24 çalışmaktadırlar.</p>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="v-pills-it" role="tabpanel">
+                            <h3>Bilgi Teknolojileri</h3>
+                            <hr>
+                            <img src="img/blog/it-expert.jpg" class="img-fluid mb-3 rounded" alt="IT">
+                            <p>Web sitemizin (bu sitenin), sunucuların ve iç iletişim ağlarının güvenliğinden ve sürekliliğinden sorumludur.</p>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-finans" role="tabpanel">
+                            <h3>Muhasebe ve Finans</h3>
+                            <hr>
+                            <img src="img/blog/mfy.png" class="img-fluid mb-3 rounded" alt="Muhasebe">
+                            <p>Şirketin mali dengesini koruyan, faturalandırma ve raporlama süreçlerini yöneten birimimizdir.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer__about">
+                    <div class="footer__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <p>Akane, modern tasarım anlayışı ve kaliteli ürün yelpazesiyle modaya yön veren öncü bir giyim mağazasıdır.</p>
+                    <div class="footer__payment">
+                        <a href="#"><img src="img/payment/payment-1.png" alt=""></a>
+                        <a href="#"><img src="img/payment/payment-2.png" alt=""></a>
+                        <a href="#"><img src="img/payment/payment-3.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="footer__widget">
+                    <h6>Hızlı Menü</h6>
+                    <ul>
+                        <li><a href="./about.html">Hakkımızda</a></li>
+                        <li><a href="./misyon-vizyon.html">Misyon & Vizyon</a></li>
+                        <li><a href="./blog.html">Blog Yazıları</a></li>
+                        <li><a href="./contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="footer__widget">
+                    <h6>Bize Ulaşın</h6>
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i> Kocaeli Üniversitesi Teknoloji Fakültesi, 41000 İzmit/Kocaeli</li>
+                        <li><i class="fa fa-phone"></i> +90 505 571 71 65</li>
+                        <li><i class="fa fa-envelope"></i> ulutumu@gmail.com</li>
+                        <li><i class="fa fa-clock-o"></i> Pzt - Cuma: 09:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="footer__newslatter">
+                    <h6>SOSYAL MEDYA & BÜLTEN</h6>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/kou92official/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://x.com/kou92official"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/kou92official/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/c/kocaeli%C3%BCniversitesi"><i class="fa fa-youtube-play"></i></a>
+                    </div>
+                    <p>Kampanyalardan haberdar olmak için e-posta adresinizi bırakın.</p>
+                    <form id="bultenFormu">
+                        <input type="text" placeholder="E-Posta Adresiniz">
+                        <button type="submit" class="site-btn">Abone Ol</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer__copyright__text">
+                    <p>
+                        Copyright &copy; <script>document.write(new Date().getFullYear());</script> Tüm Hakları Saklıdır. <br>
+                        Bu web sitesi <span style="color: #ca1515; font-weight: bold;">Umut ULU</span> tarafından tasarlanmıştır.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akane | Tüm Duyurular</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/elegant-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    
+    <style>
+        /* Duyuru Kartı Tasarımı */
+        .duyuru-card {
+            border: 1px solid #eee;
+            border-left: 5px solid #ca1515; /* Akane Kırmızısı */
+            background: #fff;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            position: relative;
+        }
+        .duyuru-card:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            transform: translateY(-3px);
+        }
+        .duyuru-date {
+            font-size: 13px;
+            color: #888;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .duyuru-date i {
+            color: #ca1515;
+            margin-right: 5px;
+        }
+        .duyuru-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .duyuru-excerpt {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .read-more-btn {
+            color: #ca1515;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .read-more-btn:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__close">+</div>
+        <div id="mobile-menu-wrap"></div>
+    </div>
+
+<header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-3 col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt="Akane Logo"></a>
+                    </div>
+                </div>
+                
+                <div class="col-xl-7 col-lg-8">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="./index.html">Ana Sayfa</a></li>
+                            
+                            <li><a href="./shop.html">Ürünlerimiz</a>
+                                <ul class="dropdown">
+                                    <li><a href="./shop-kadin.html">Kadın Giyim</a></li>
+                                    <li><a href="./shop-erkek.html">Erkek Giyim</a></li>
+                                    <li><a href="./shop-cocuk.html">Çocuk Giyim</a></li>
+                                    <li><a href="./shop-aksesuar.html">Aksesuarlar</a></li>
+                                    <li><a href="./shop-kozmetik.html">Kozmetik</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li><a href="./birimlerimiz.html">Birimlerimiz</a></li>
+                            <li><a href="./about.html">Hakkımızda</a></li>
+                            <li><a href="./misyon-vizyon.html">Misyon-Vizyon</a></li>
+                            
+                            <li><a href="./blog.html">Blog</a></li>
+
+                            <li><a href="./contact.html">İletişim</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="header__right">
+                        <div class="header__right__auth">
+                            <a href="./admin/panel.html">Yönetici Girişi</a>
+                        </div>
+                        <ul class="header__right__widget">
+                            <li><span class="icon_search search-switch"></span></li>
+                            <li><a href="./shop-cart.html"><span class="icon_bag_alt"></span>
+                                <div class="tip">0</div>
+                            </a></li>
+                             <li style="margin-left:10px;">
+                                <button id="darkModeToggle" style="border:none; background:transparent; cursor:pointer; font-size:18px;">
+                                    <i class="fa fa-moon-o"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="./index.html"><i class="fa fa-home"></i> Ana Sayfa</a>
+                        <span>Duyurular & Kampanyalar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <div class="section-title">
+                        <h4>Tüm Duyurular</h4>
+                        <p>En güncel haberler ve fırsatlar, yeniden eskiye doğru sıralanmıştır.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="duyuruListesiAlani">
+                </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright__text">
+                        <p>Copyright © <script>document.write(new Date().getFullYear());</script> Tüm Hakları Saklıdır.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="duyuruModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalBaslik" style="color: #ca1515; font-weight:bold;">Başlık</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3 text-muted" id="modalTarih"><i class="fa fa-calendar"></i> Tarih</div>
+            <p id="modalIcerik" style="font-size: 16px; line-height: 1.6;">İçerik...</p>
+            <hr>
+            <div class="alert alert-secondary mt-3">
+                <i class="fa fa-file-pdf-o"></i> <a href="#" onclick="alert('Demo dosya indiriliyor...')">Ekli_Dosya.pdf</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        window.addEventListener('load', function() {
+            var alan = document.getElementById("duyuruListesiAlani");
+            
+            // 1. Statik (Eski) Duyurular - Veritabanı Simülasyonu
+            var statikDuyurular = [
+                {
+                    baslik: "Kış İndirimleri Başladı",
+                    tarih: "2024-11-20",
+                    icerik: "Tüm kışlık ürünlerde %50'ye varan indirimler mağazalarımızda ve online sitemizde başladı."
+                },
+                {
+                    baslik: "Mağaza Çalışma Saatleri Güncellendi",
+                    tarih: "2024-10-15",
+                    icerik: "Kış saati uygulaması nedeniyle mağazalarımız 10:00 - 20:00 saatleri arasında hizmet verecektir."
+                },
+                {
+                    baslik: "Yeni Şube Açılışı: Kadıköy",
+                    tarih: "2024-09-01",
+                    icerik: "İstanbul Kadıköy şubemiz büyük bir törenle hizmete açıldı. Hepinizi bekleriz."
+                }
+            ];
+
+            // 2. Admin Panelinden Gelen (Yeni) Duyuru Var mı?
+            var adminBaslik = localStorage.getItem("yeniDuyuruBaslik");
+            var adminIcerik = localStorage.getItem("yeniDuyuruIcerik");
+
+            if(adminBaslik) {
+                // Varsa listeye en başa (Newest) ekle
+                statikDuyurular.unshift({
+                    baslik: adminBaslik,
+                    tarih: new Date().toLocaleDateString('tr-TR'), // Bugünün tarihi
+                    icerik: adminIcerik
+                });
+            }
+
+            // 3. Ekrana Bas (Liste zaten yukarıda yeni->eski sıralandı)
+            alan.innerHTML = "";
+            statikDuyurular.forEach(function(duyuru) {
+                var html = `
+                <div class="col-lg-12">
+                    <div class="duyuru-card">
+                        <span class="duyuru-date"><i class="fa fa-calendar"></i> ${duyuru.tarih}</span>
+                        <h3 class="duyuru-title">${duyuru.baslik}</h3>
+                        <p class="duyuru-excerpt">${duyuru.icerik.substring(0, 150)}...</p>
+                        
+                        <span class="read-more-btn" 
+                              data-toggle="modal" 
+                              data-target="#duyuruModal"
+                              onclick="modalDoldur('${duyuru.baslik}', '${duyuru.tarih}', '${duyuru.icerik.replace(/'/g, "\\'")}')">
+                              Devamını Oku <i class="fa fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </div>`;
+                alan.innerHTML += html;
+            });
+        });
+
+        // Modala veri gönderme fonksiyonu
+        function modalDoldur(baslik, tarih, icerik) {
+            document.getElementById("modalBaslik").innerText = baslik;
+            document.getElementById("modalTarih").innerHTML = '<i class="fa fa-calendar"></i> ' + tarih;
+            document.getElementById("modalIcerik").innerText = icerik;
+        }
+    </script>
+</body>
+</html>

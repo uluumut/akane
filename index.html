@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Akane Giyim Mağazası">
+    <meta name="keywords" content="Akane, moda, giyim, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Akane | Ana Sayfa</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/custom.css" type="text/css">
+    
+    <style>
+        .duyuru-item {
+            border: 1px solid #eee;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s;
+        }
+        .duyuru-item:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .duyuru-date {
+            font-size: 12px;
+            color: #ca1515;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .duyuru-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #111;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__close">+</div>
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__auth">
+            <a href="./admin/login.html">Yönetici Girişi</a>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-3 col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt="Akane Logo"></a>
+                    </div>
+                </div>
+                
+                <div class="col-xl-7 col-lg-8">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Ana Sayfa</a></li>
+
+                            <li><a href="./shop.html">Ürünlerimiz</a>
+                                <ul class="dropdown">
+                                    <li><a href="./shop-kadin.html">Kadın Giyim</a></li>
+                                    <li><a href="./shop-erkek.html">Erkek Giyim</a></li>
+                                    <li><a href="./shop-cocuk.html">Çocuk Giyim</a></li>
+                                    <li><a href="./shop-aksesuar.html">Aksesuarlar</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="./birimlerimiz.html">Birimlerimiz</a></li>
+
+                            <li><a href="./about.html">Hakkımızda</a></li>
+                            <li><a href="./misyon-vizyon.html">Misyon-Vizyon</a></li>
+                            
+                            <li><a href="./blog.html">Blog</a></li>
+
+                            <li><a href="./contact.html">İletişim</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="header__right">
+                        <div class="header__right__auth">
+                            <a href="./admin/panel.html">Yönetici Girişi</a>
+                        </div>
+                        <ul class="header__right__widget">
+                            <li><span class="icon_search search-switch"></span></li>
+                            
+                            <li><a href="./shop-cart.html"><span class="icon_bag_alt"></span>
+                                <div class="tip">0</div>
+                            </a></li>
+
+                            <li style="margin-left:10px;">
+                                <button id="darkModeToggle" style="border:none; background:transparent; cursor:pointer; font-size:18px;">
+                                    <i class="fa fa-moon-o"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="canvas__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <section class="banner set-bg" data-setbg="img/banner/banner-1.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-8 m-auto">
+                    <div class="banner__slider owl-carousel">
+                        <div class="banner__item">
+                            <div class="banner__text">
+                                <span>Yeni Sezon</span>
+                                <h1>Yaz Koleksiyonu</h1>
+                                <a href="./shop-yaz.html">İncele</a>
+                            </div>
+                        </div>
+                        <div class="banner__item">
+                            <div class="banner__text">
+                                <span>İndirim Fırsatı</span>
+                                <h1>%50 İndirimler</h1>
+                                <a href="./shop-indirim.html">Fırsatları Gör</a>
+                            </div>
+                        </div>
+                        <div class="banner__item">
+                            <div class="banner__text">
+                                <span>Özel Tasarım</span>
+                                <h1>Ceket Modelleri</h1>
+                                <a href="./product-details.html">Satın Al</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="categories">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 p-0">
+                    <div class="categories__item categories__large__item set-bg"
+                    data-setbg="img/categories/category-1.jpg">
+                    <div class="categories__text">
+                        <h1>Kadın Modası</h1>
+                        <p>En şık tasarımlar ve yeni sezon ürünleri sizi bekliyor.</p>
+                        <a href="./shop-kadin.html">Alışverişe Başla</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                        <div class="categories__item set-bg" data-setbg="img/categories/category-2.jpg">
+                            <div class="categories__text">
+                                <h4>Erkek Modası</h4>
+                                <a href="./shop-erkek.html">Göz At</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                        <div class="categories__item set-bg" data-setbg="img/categories/category-3.jpg">
+                            <div class="categories__text">
+                                <h4>Çocuk Modası</h4>
+                                <a href="./shop-cocuk.html">Göz At</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                        <div class="categories__item set-bg" data-setbg="img/categories/category-4.jpg">
+                            <div class="categories__text">
+                                <h4>Kozmetik</h4>
+                                <a href="./shop-kozmetik.html">Göz At</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                        <div class="categories__item set-bg" data-setbg="img/categories/category-5.jpg">
+                            <div class="categories__text">
+                                <h4>Aksesuarlar</h4>
+                                <a href="./shop-aksesuar.html">Göz At</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="trend spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h4>Duyurular & Kampanyalar</h4>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row" id="duyuru-listesi">
+            <div class="col-lg-4 col-md-6">
+                <div class="duyuru-item">
+                    <div class="duyuru-date">05 ARALIK 2024</div>
+                    <a href="#" class="duyuru-title" data-toggle="modal" data-target="#duyuruModal" onclick="modalVeriYukle('Yeni Sezon Açılışı', 'Tüm mağazalarımızda yeni sezon ürünlerimiz raflardaki yerini aldı. Detaylı bilgi kataloğumuzda.')">Yeni Sezon Açılışı Yapıldı</a>
+                    <p>Detayları görüntülemek için tıklayınız...</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="duyuru-item">
+                    <div class="duyuru-date">01 ARALIK 2024</div>
+                    <a href="#" class="duyuru-title" data-toggle="modal" data-target="#duyuruModal" onclick="modalVeriYukle('Kış İndirimleri Başladı', '%50ye varan kış indirimleri tüm ürünlerde geçerlidir.')">Büyük Kış İndirimi</a>
+                    <p>Detayları görüntülemek için tıklayınız...</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="duyuru-item">
+                    <div class="duyuru-date">28 KASIM 2024</div>
+                    <a href="#" class="duyuru-title" data-toggle="modal" data-target="#duyuruModal" onclick="modalVeriYukle('Personel Alımı', 'Satış departmanımızda çalışmak üzere ekip arkadaşları arıyoruz.')">Personel Alımı Hakkında</a>
+                    <p>Detayları görüntülemek için tıklayınız...</p>
+                </div>
+            </div>
+            
+             <div class="col-lg-4 col-md-6">
+                <div class="duyuru-item">
+                    <div class="duyuru-date">20 KASIM 2024</div>
+                    <a href="#" class="duyuru-title" data-toggle="modal" data-target="#duyuruModal" onclick="modalVeriYukle('Mağaza Açılış Saatleri', 'Hafta sonu çalışma saatlerimiz güncellenmiştir.')">Çalışma Saatleri Güncellemesi</a>
+                    <p>Detayları görüntülemek için tıklayınız...</p>
+                </div>
+            </div>
+
+             <div class="col-lg-4 col-md-6" id="admin-duyuru-placeholder" style="display:none;">
+                </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-12 text-center mt-4">
+                <a href="./duyurular.html" class="site-btn">Tüm Duyurular (Daha Fazla)</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="discount">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 p-0">
+                <div class="discount__pic">
+                    <img src="img/discount.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 p-0">
+                <div class="discount__text">
+                    <div class="discount__text__title">
+                        <span>Kurumsal Veriler</span>
+                        <h2>Sayılarla Biz</h2>
+                        <h5><span>İstatistikler</span> Grafiklerle Başarımız</h5>
+                    </div>
+                    <a href="./istatistikler.html">Grafikleri İncele</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer__about">
+                    <div class="footer__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <p>Akane, modern tasarım anlayışı ve kaliteli ürün yelpazesiyle modaya yön veren öncü bir giyim mağazasıdır.</p>
+                    <div class="footer__payment">
+                        <a href="#"><img src="img/payment/payment-1.png" alt=""></a>
+                        <a href="#"><img src="img/payment/payment-2.png" alt=""></a>
+                        <a href="#"><img src="img/payment/payment-3.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="footer__widget">
+                    <h6>Hızlı Menü</h6>
+                    <ul>
+                        <li><a href="./about.html">Hakkımızda</a></li>
+                        <li><a href="./misyon-vizyon.html">Misyon & Vizyon</a></li>
+                        <li><a href="./blog.html">Blog Yazıları</a></li>
+                        <li><a href="./contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="footer__widget">
+                    <h6>Bize Ulaşın</h6>
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i> Kocaeli Üniversitesi Teknoloji Fakültesi, 41000 İzmit/Kocaeli</li>
+                        <li><i class="fa fa-phone"></i> +90 505 571 71 65</li>
+                        <li><i class="fa fa-envelope"></i> ulutumu@gmail.com</li>
+                        <li><i class="fa fa-clock-o"></i> Pzt - Cuma: 09:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="footer__newslatter">
+                    <h6>SOSYAL MEDYA & BÜLTEN</h6>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/kou92official/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://x.com/kou92official"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/kou92official/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/c/kocaeli%C3%BCniversitesi"><i class="fa fa-youtube-play"></i></a>
+                    </div>
+                    <p>Kampanyalardan haberdar olmak için e-posta adresinizi bırakın.</p>
+                    <form id="bultenFormu">
+                        <input type="text" placeholder="E-Posta Adresiniz">
+                        <button type="submit" class="site-btn">Abone Ol</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer__copyright__text">
+                    <p>
+                        Copyright &copy; <script>document.write(new Date().getFullYear());</script> Tüm Hakları Saklıdır. <br>
+                        Bu web sitesi <span style="color: #ca1515; font-weight: bold;">Umut ULU</span> tarafından tasarlanmıştır.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch">+</div>
+        <form class="search-model-form">
+            <input type="text" id="search-input" placeholder="Arama yapın.....">
+        </form>
+    </div>
+</div>
+<div class="modal fade" id="duyuruModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalBaslik">Duyuru Başlığı</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p id="modalIcerik">Duyuru içeriği buraya gelecek...</p>
+        <hr>
+        <h6>Ekli Dosyalar:</h6>
+        <p><i class="fa fa-file-pdf-o"></i> <a href="#">duyuru-detay.pdf</a> (Örnek)</p>
+        <div class="text-center mt-3">
+            <img src="img/blog/blog-1.jpg" class="img-fluid" alt="Duyuru Görseli" style="max-height: 300px;">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+      </div>
+    </div>
+  </div>
+</div>
+ <script src="js/custom.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+    function modalVeriYukle(baslik, icerik) {
+        document.getElementById('modalBaslik').innerText = baslik;
+        document.getElementById('modalIcerik').innerText = icerik;
+    }
+
+    // Admin panelinden gelen veriyi kontrol et (localStorage Simülasyonu)
+    window.onload = function() {
+        var adminDuyuruBaslik = localStorage.getItem("yeniDuyuruBaslik");
+        var adminDuyuruIcerik = localStorage.getItem("yeniDuyuruIcerik");
+
+        if (adminDuyuruBaslik) {
+            var placeholder = document.getElementById("admin-duyuru-placeholder");
+            placeholder.style.display = "block";
+            placeholder.innerHTML = `
+                <div class="duyuru-item" style="border-color: #ca1515;">
+                    <div class="duyuru-date">YENİ EKLENDİ</div>
+                    <a href="#" class="duyuru-title" data-toggle="modal" data-target="#duyuruModal" onclick="modalVeriYukle('${adminDuyuruBaslik}', '${adminDuyuruIcerik}')">${adminDuyuruBaslik}</a>
+                    <p>Detayları görüntülemek için tıklayınız...</p>
+                </div>
+            `;
+        }
+    }
+</script>
+
+
+<a href="https://wa.me/905055717165" target="_blank" class="whatsapp-float">
+    <i class="fa fa-whatsapp"></i>
+</a>
+
+<style>
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.whatsapp-float:hover {
+    background-color: #128C7E;
+    color: #fff;
+    transform: scale(1.1);
+}
+</style>
+
+
+
+
+
+
+</body>
+</html>
